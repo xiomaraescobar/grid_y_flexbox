@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+:root {
+  --blue: #EAF0F8;
+}
+body{
+    margin: 0;
+    background:var(--blue) ;
+    font-family: 'Roboto', sans-serif;
+    color: #000;
+    background-color: #e3e6e6;
+    letter-spacing: 1px;
+    font-weight: 700;
+}
+
+.wrapper{
+    display: grid;
+    grid-template-rows: 80px 300px 150px 100px;
+    height: 100vh;
+    justify-content: center;
+    align-content: start;
+}
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.header p{
+    font-size: 1.2rem;
+    margin: 0;
+    margin-bottom: 4px;
+}
+.cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cards div{
+    width: 250px;
+    height: 250px;
+    border-radius: 20px;
+    background-image: url('https://i.pinimg.com/564x/e6/5d/35/e65d3541876f5fe59f7a79a60ad4c120.jpg');
+    background-position: center;
+    background-repeat: none;
+    background-size: contain;
+    box-shadow: 10px 10px 15px #383838,-10px -10px 15px #fff;
+}
+.progress-bar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.bar_title{
+    text-align: center;
+}
+.bar_title h2{
+    
+    font-size: 1.5rem;
+    margin-bottom: 4px; 
+}
+
+.bar_title p{
+    font-size: 1rem;
+    margin-top: 4px;
+}
+.bar_container{
+    width: 298px;
+    height: 6px;
+    background-color: #ffffff;
+    border-radius: 2px;
+    position: relative;
+    margin-top: 16px;
+}
+.bar_song{
+    width: 180px;
+    height: 6px;
+    background-color: #a2edd7;
+    border-radius: 2px;
+    position: absolute;
+}
+.time{
+    width: 298px;
+    display: flex;
+    justify-content: space-between;
+}
+.time p{
+    margin-top: 4px;
+    font-size: 0.6rem;
+}
+.buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.buttons-container{
+    width: 298px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.buttons .play{
+    width: 62px;
+    height: 62px;
+    background-image: url('https://img.icons8.com/flat-round/344/play--v1.pnghttps://img.icons8.com/flat-round/344/play--v1.png');
+    background-position: center;
+    background-repeat: none;
+    background-size: cover;
+}
+.buttons .back{
+    width:  44px;
+    height: 44px;
+    background-image: url('https://img.icons8.com/flat-round/344/rewind--v1.png');
+    background-position: center;
+    background-repeat: none;
+    background-size: cover;
+}
+.buttons .next{
+    width: 44px;
+    height: 44px;
+    background-image: url('https://img.icons8.com/flat-round/344/fast-forward--v1.png');
+    background-position: center;
+    background-repeat: none;
+    background-size: cover;
+}
+.buttons .start{
+    width: 44px;
+    height: 44px;
+    background-image: url('https://img.icons8.com/flat-round/344/skip-to-start.png');
+    background-position: center;
+    background-repeat: none;
+    background-size: cover;
+}
+.buttons .end{
+    width: 44px;
+    height: 44px;
+    background-image: url('https://img.icons8.com/flat-round/344/end--v1.png');
+    background-position: center;
+    background-repeat: none;
+    background-size: cover;
+}
+.play:hover {
+    box-shadow: inset 4px 4px 8px #dcf3ee,
+              inset -4px -4px 8px #9deddc;
+    border-radius: 50%;
+}
+.back:hover, .next:hover, .end:hover, .start:hover {
+    box-shadow: inset 4px 4px 8px #dcf3ee,
+              inset -4px -4px 8px #9deddc;
+    border-radius: 50%;          
+  }
